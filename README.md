@@ -1,45 +1,73 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 
-Welcome USER_NAME,
+![logo](**insert logo** "nsum logo")
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+#### Code Institute - Milestone Project 4
+## Full Stack Web App 
+## Cork International Hotel Takeaway Service
+![Am I Responsive](**insert link**)
+[View the project live here](**insert link**)
+## Introduction
+Welcome,
+This Full Stack Web App was made as a 4th Milestone Project with Code Institute.
+Hotel I work in was like many others severely impacted by Covid-19 pandemic. 
+In efforts to create some revenue, the Hotel started to offer food takeaway service.
+At the moment service operates by people calling the hotel's reception and receptionist taking the order over the phone.
+This method is not very convenient as receptionists are sometimes unable to take a call or information sometimes gets lost in the process.
+Hence the idea for this project. This app would make it easy for people to put in an order, and make it easier for the hotel to process it.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# User Experience
+## User Stories
 
-`python3 -m http.server`
++   ### First Time Visitors
+    1. I want to be able to easily understand the purpose of the site and easily navigate it
+    2. I want to easily and quickly purchase my takeaway
+    3. I want to see collection location on map and clear instructions on how to get there and collect my order
 
-A blue button should appear to click: _Make Public_,
++   ### Non-registered Users
+    1. I want to freely browse the site without being registered
+    2. I want to be able to make an order without registering on the site
 
-Another blue button should appear to click: _Open Browser_.
++   ### Registered & Regular Visitors
+    1. I want some kind of incentive to register and use the site
+    2. I want to be able to see my order history 
+    3. I want some sort of loyalty programme rewarding my return visits and new orders
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
++   ### Users With Special Diatery Requirements
+    1. As someone who has Gluten intolerance, I want to be able to be able to distinguish Gluten-free meals
+    2. As a vegan, I want to be able to easily distinguish Vegan options from non-vegan ones
+    3. As someone with allergic to "x", I want the menu to have information on any allergens in the meals or drinks
 
-A blue button should appear to click: _Make Public_,
++   ### Ordering & Purchasing
+    1. I want to easily see my shopping bag and bag totals as I add items to it
+    2. I want to see overview of my order before completing the purchase
+    3. I want my payment to be securely proccessed
+    4. I want to receive confirmation email with my order details
 
-Another blue button should appear to click: _Open Browser_.
+## Wireframes
+    + [Index Page - Desktop](/media/readme-files/home.png) 
+    + [Basket - Desktop](/media/readme-files/basket.png) 
+    + [Checkout - Desktop](/media/readme-files/checkout.png) 
+    + [Menu - Desktop](/media/readme-files/menu.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-## Updates Since The Instructional Video
+# Technologies Used
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Languages Used
++   [HTML5](https://en.wikipedia.org/wiki/HTML5)
++   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
++   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
++   [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
----
-
-Happy coding!
+### Frameworks Libraries Tools Used
++ [PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project.
++ [Jinja](http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in HTML.
++ [Heroku:](https://www.heroku.com/) was used as deployment platform
++ [requirements.txt:](requirements.txt) contains list off all dependancies
++ [Randomkeygen:](https://randomkeygen.com/) was used for encrypting vars.
++ [Git:](https://git-scm.com/) was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
++ [GitHub:](https://github.com/) is used to store the project's code after being pushed from Git.
++ [Font Awesome:](https://fontawesome.com/) was used on all pages throughout the website to add icons for aesthetic and UX purposes.
++ [Imagecompressor.com:](https://imagecompressor.com/) was used to compress images
++ [Am I Responsive:](http://ami.responsivedesign.is/) was used to create the image at the top of README.md
