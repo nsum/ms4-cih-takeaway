@@ -71,4 +71,5 @@ Hence the idea for this project. This app would make it easy for people to put i
 + [Font Awesome:](https://fontawesome.com/) was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 + [Imagecompressor.com:](https://imagecompressor.com/) was used to compress images
 + [Bootstrap:](https://getbootstrap.com/) was used for design and customization
++ [jQuery:](https://jquery.com/) was used for document traversal, manipulation, event handling & animations.
 + [Am I Responsive:](http://ami.responsivedesign.is/) was used to create the image at the top of README.md
