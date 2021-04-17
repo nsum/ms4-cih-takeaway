@@ -70,4 +70,5 @@ Hence the idea for this project. This app would make it easy for people to put i
 + [GitHub:](https://github.com/) is used to store the project's code after being pushed from Git.
 + [Font Awesome:](https://fontawesome.com/) was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 + [Imagecompressor.com:](https://imagecompressor.com/) was used to compress images
++ [Bootstrap:](https://getbootstrap.com/) was used for design and customization
 + [Am I Responsive:](http://ami.responsivedesign.is/) was used to create the image at the top of README.md
