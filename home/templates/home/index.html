@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
     <h1 class="text-success display-4">Testing bootstrap and templates</h1>
+    <section id="hero-outer" class="container h-100">
+        <div id="hero-image"></div>
+        <a class="btn btn-outline-secondary btn-lg text-uppercase" href="#" role="button">Order Now</a>
+    </section>
 {% endblock %}
