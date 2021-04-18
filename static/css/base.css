@@ -4,7 +4,7 @@ html {
 
 body {
     height: 100%;
-    color: #5555;
+    color: #101820;
     font-family: 'Lato';
 }
 
@@ -17,6 +17,10 @@ body {
     color: #f2aa4c !important;
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+}
+
 .logo-font {
     width: fit-content;
 }
@@ -24,6 +28,16 @@ body {
 .navbar-toggler-icon {
     background-color: #f2aa4c !important;
     border-radius: 4px;
+}
+
+.dropdown-menu {
+    background-color: #f2aa4c;
+    color: #101820;
+}
+
+.dropdown-item:hover {
+    color: #f2aa4c;
+    background-color: #101820;
 }
 
 /* Hero image, zoom and order button */
@@ -59,15 +73,38 @@ body {
     text-align: center;
 }
 
+#cover-text > h3,h4{
+    color: #f2aa4c;
+    background-color: rgba(16, 24, 32, 0.8);
+    margin: 5px auto;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+}
+
 .order-btn {
     background-color: #f2aa4c;
     color: #101820;
     border: 2px solid #101820;
+    margin-top: 20px;
 }
 
 .order-btn:hover {
     background-color: #101820;
     color: #f2aa4c;
+    border: 2px solid #101820;
+}
+
+.info-btn {
+    color: #f2aa4c;
+    background-color: #101820;
+    border: 2px solid #101820;
+    margin-top: 20px;
+}
+
+.info-btn:hover {
+    color: #101820;
+    background-color: #f2aa4c;
     border: 2px solid #101820;
 }
 
