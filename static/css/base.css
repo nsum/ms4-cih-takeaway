@@ -3,8 +3,72 @@ html {
 }
 
 body {
+    height: 100%;
     color: #5555;
     font-family: 'Lato';
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(16, 24, 32, 0.8);
+}
+
+.nav-link, .logo-font {
+    color: #f2aa4c !important;
+}
+
+.logo-font {
+    width: fit-content;
+}
+
+.navbar-toggler-icon {
+    background-color: #f2aa4c !important;
+    border-radius: 4px;
+}
+
+/* Hero image, zoom and order button */
+#hero-outer {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero-image {
+  height: 100%;
+  width: 100%;
+  background: url("/media/hero-image.jpg") no-repeat center center;
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+#cover-text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.order-btn {
+    background-color: #f2aa4c;
+    color: #101820;
+    border: 2px solid #101820;
+}
+
+.order-btn:hover {
+    background-color: #101820;
+    color: #f2aa4c;
+    border: 2px solid #101820;
 }
 
 /* from Bulma */
@@ -14,8 +78,4 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
-
-.logo-font {
-    width: fit-content;
 }
