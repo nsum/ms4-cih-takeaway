@@ -1,0 +1,18 @@
+[
+    {"pk": 1, "model": "items.category", "fields": 
+        {"name": "mains", "friendly_name": "Main Courses"}}, 
+    {"pk": 2, "model": "items.category", "fields": 
+        {"name": "starters", "friendly_name": "Starters"}}, 
+    {"pk": 3, "model": "items.category", "fields": 
+        {"name": "vegan", "friendly_name": "Vegan Options"}}, 
+    {"pk": 4, "model": "items.category", "fields": 
+        {"name": "desserts", "friendly_name": "Desserts"}}, 
+    {"pk": 5, "model": "items.category", "fields": 
+        {"name": "beers", "friendly_name": "Beers"}}, 
+    {"pk": 6, "model": "items.category", "fields": 
+        {"name": "cocktails", "friendly_name": "Cocktails"}}, 
+    {"pk": 7, "model": "items.category", "fields": 
+        {"name": "soft_drinks", "friendly_name": "Soft Drinks"}}, 
+    {"pk": 8, "model": "items.category", "fields": 
+        {"name": "wines", "friendly_name": "Wines"}}
+]

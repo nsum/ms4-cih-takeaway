@@ -1,0 +1,30 @@
+[
+  {
+    "pk": 1,
+    "model": "items.item",
+    "fields": {
+      "name": "SOUP OF THE DAY SERVED WITH HOMEMADE BROWN BREAD",
+      "description": "Please check allergens when ordering",
+      "allergens": "[G]",
+      "price": 5.5,
+      "category": 2,
+      "rating": 4.6,
+      "image_url": "#",
+      "image": "soup.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "items.item",
+    "fields": {
+      "name": "LEBANESE FLAT BREAD TOPPED WITH SUN-DRIED TOMATO HUMMUS",
+      "description": "Shredded Beef Brisket, Toasted Cashews & Dressed Leaves",
+      "allergens": "[G], [D], [N], [Ss]",
+      "price": 8.5,
+      "category": 2,
+      "rating": 4.8,
+      "image_url": "#",
+      "image": "soup.jpg"
+    }
+  }
+]
