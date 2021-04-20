@@ -121,3 +121,9 @@ body {
 .hr-heading {
     border-top: 2px solid #101820;
 }
+
+.iframe-div {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}

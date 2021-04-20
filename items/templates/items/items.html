@@ -31,13 +31,16 @@
                                     {% endif %}
                                 </div>
                             </div>
-                            <a href=" {% url 'item_detail' item.id %} " class="btn order-btn btn-primary">Add to basket</a>
+                            <!-- iframe -->
+                            <iframe class="iframe" frameborder="0" src="{{ item.id }}">"></iframe>
                         </div>
                     </div>
                 {% endfor %}
             </div>
         </div>
     </div>
+
 {% endblock %}
 {% block postloadjs %}
+    
 {% endblock %}
