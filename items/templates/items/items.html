@@ -15,15 +15,15 @@
         <div class="row">
             <div class="items-container col-12 col-sm-10 offset-sm-1">
                 {% for item in items %}
-                    <div class="card mt-2 col-12 col-sm-8 offset-sm-2">
+                    <div class="card mt-2 col-12 col-sm-10 offset-sm-1">
                         <div class="card-body">
                             <h5 class="text-center card-title">{{ item.name }}</h5>
                             <hr>
                             <p class="card-text">{{ item.description }}</p>
                             <div class="row text-muted">
-                                <div class="col-12">Allergens: {{ item.allergens }}</div>
-                                <div class="col-6">Price: €{{ item.price }}</div>
-                                <div class="col-6">
+                                <div class="col-4">Allergens: {{ item.allergens }}</div>
+                                <div class="col-4">Price: €{{ item.price }}</div>
+                                <div class="col-4">
                                     {% if item.rating %}
                                         <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ item.rating }} / 5</small>
                                     {% else %}
@@ -31,11 +31,13 @@
                                     {% endif %}
                                 </div>
                             </div>
-                            <a href="#" class="btn order-btn btn-primary">Add to basket</a>
+                            <a href=" {% url 'item_detail' item.id %} " class="btn order-btn btn-primary">Add to basket</a>
                         </div>
                     </div>
                 {% endfor %}
             </div>
         </div>
     </div>
+{% endblock %}
+{% block postloadjs %}
 {% endblock %}
