@@ -17,7 +17,12 @@
 {% endblock %}
 
 {% block content %}
-    <div class="iframe-div">
+    <div class="iframe-div p-2">
+        <p class="">{{ item.description }}</p>
+        <div class="row m-0 text-muted">
+            <div class="col-6">Allergens: {{ item.allergens }}</div>
+            <div class="col-6">Price: €{{ item.price }}</div>
+        </div>
         <a href="{% url 'home' %}" class="btn order-btn btn-primary">Add to basket</a>
     </div>
 {% endblock %}

@@ -127,3 +127,16 @@ body {
     height: 100%;
     width: 100%;
 }
+
+/* Search bar */
+.form-control {
+    border: 1px solid #101820;
+}
+
+.search-btn {
+    background-color: #f2aa4c;
+}
+
+.search-div {
+    
+}

@@ -31,8 +31,24 @@
                                     {% endif %}
                                 </div>
                             </div>
-                            <!-- iframe -->
-                            <iframe class="iframe" frameborder="0" src="{{ item.id }}">"></iframe>
+                            <button type="button" class="openModal{{item.id}} btn order-btn btn-primary">Add to basket</button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal{{item.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title">{{item.name}}</h6>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe class="iframe w-100" frameborder="0" src="{{ item.id }}">"></iframe>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 {% endfor %}
@@ -42,5 +58,12 @@
 
 {% endblock %}
 {% block postloadjs %}
-    
+    {% for item in items %}
+        <script>
+            $('.openModal{{item.id}}').on('click', function (e) {
+                e.preventDefault();
+                $('#myModal{{item.id}}').modal('show');
+            });
+        </script>
+    {% endfor %}
 {% endblock %}

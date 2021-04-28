@@ -80,11 +80,25 @@
                     </div>
                 </li>
                 </ul>
-                
             </div>
-            <!-- Profile & bag -->
-            <div class="col-12 col-sm-4 my-auto py-1 py-sm-0">
-                <ul class="list-inline list-unstyled text-center text-sm-right my-0">
+            <!-- Profile, Search  & bag -->
+            <div class="col-12 col-md-6 my-auto py-1 py-sm-0">
+                <ul class="list-inline list-unstyled text-center text-md-right  my-0">
+                    <!-- Search Bar -->
+                    <li class="list-inline-item">
+                        <form class="form-inline" method="GET" action="{% url 'items' %}">
+                            <div class="input-group w-100">
+                                <input class="form-control" type="text" name="q" placeholder="Search items">
+                                <div class="input-group-append">
+                                    <button class="form-control btn search-btn btn-black" type="submit">
+                                        <span class="icon">
+                                            <strong><i class="fas fa-search"></i></strong>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
                     <!-- Profile links -->
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -116,7 +130,6 @@
                                         $0.00
                                     {% endif %}
                                 </span>
-                                
                             </div>
                         </a>
                     </li>
