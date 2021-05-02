@@ -170,3 +170,13 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
     text-decoration: none;
 }
+
+/* Keep shopping btn */
+.btn-outline {
+    border: 1px solid #101820;
+}
+
+.btn-outline:hover {
+    font-weight: 700;
+    border: 2px solid #101820;
+}
