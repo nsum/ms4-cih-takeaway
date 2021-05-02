@@ -9,6 +9,10 @@ body {
     background-color: #f2aa4c;
 }
 
+.text-dark {
+    color: #101820 !important;
+}
+
 /* Navbar */
 .navbar {
     background-color: rgba(16, 24, 32, .9);
@@ -137,6 +141,14 @@ body {
     background-color: #f2aa4c;
 }
 
-.search-div {
-    
+/* Categories & sorting */
+a.category-badge > span.badge {
+    color: #101820 !important;
+    border: 2px solid #101820;
 }
+
+a.category-badge > span.badge:hover {
+    background: #101820 !important;
+    color: #f2aa4c !important;
+}
+
