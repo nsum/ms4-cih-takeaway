@@ -181,7 +181,9 @@ a.category-badge > span.badge:hover {
     border: 3px solid #101820;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
     text-decoration: none;
 }
