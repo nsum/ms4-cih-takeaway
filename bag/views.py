@@ -6,6 +6,7 @@ from django.shortcuts import render, redirect
 def view_bag(request):
     return render(request, 'bag/bag.html')
 
+
 def add_to_bag(request, item_id):
 
     quantity = int(request.POST.get('quantity'))
