@@ -26,6 +26,23 @@ body {
     text-decoration: underline;
 }
 
+.bag-icon > div {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-icons {
+    padding: 0;
+}
+
+.nav-icons:hover {
+    text-decoration: none;
+}
+
+.nav-icons > div:hover {
+    color: white;
+}
+
 .logo-font {
     width: fit-content;
 }
@@ -90,25 +107,25 @@ body {
 .order-btn {
     background-color: #f2aa4c;
     color: #101820;
-    border: 2px solid #101820;
+    border: 1px solid #101820;
 }
 
 .order-btn:hover {
     background-color: #101820;
     color: #f2aa4c;
-    border: 2px solid #101820;
+    border: 1px solid #101820;
 }
 
 .info-btn {
     color: #f2aa4c;
     background-color: #101820;
-    border: 2px solid #101820;
+    border: 1px solid #101820;
 }
 
 .info-btn:hover {
     color: #101820;
     background-color: #f2aa4c;
-    border: 2px solid #101820;
+    border: 1px solid #101820;
 }
 
 /* from Bulma */
