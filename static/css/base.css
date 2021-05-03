@@ -78,7 +78,7 @@ body {
     text-align: center;
 }
 
-#cover-text > h3,h4{
+#cover-text > h3, #cover-text > h4{
     color: #f2aa4c;
     background-color: rgba(16, 24, 32, 0.8);
     margin: 5px auto;
@@ -91,7 +91,6 @@ body {
     background-color: #f2aa4c;
     color: #101820;
     border: 2px solid #101820;
-    margin-top: 20px;
 }
 
 .order-btn:hover {
@@ -104,7 +103,6 @@ body {
     color: #f2aa4c;
     background-color: #101820;
     border: 2px solid #101820;
-    margin-top: 20px;
 }
 
 .info-btn:hover {
@@ -179,4 +177,10 @@ a.category-badge > span.badge:hover {
 .btn-outline:hover {
     font-weight: 700;
     border: 2px solid #101820;
+}
+
+.bag-row {
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid #101820;
 }
