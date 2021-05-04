@@ -134,7 +134,10 @@
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <input type="submit" class="btn order-btn text-uppercase mt-5" value="Add to Bag">
                 </div>
-                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                <!-- hidden input used as redirect reference point after submit
+                    99% not needed anymore as using httpreferer now
+                    delete if not needed
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}"> -->
             </div>
         </form>
     </div>
