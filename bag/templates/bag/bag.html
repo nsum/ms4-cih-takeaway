@@ -81,7 +81,7 @@
                                     <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if discount_delta > 0 %}
                                         <p class="mb-1 text-danger">
-                                            You could get {{ discount_percentage }}% off by spending just <strong>${{ discount_delta }}</strong> more!
+                                            You could get {{ discount_percentage }}% off by spending just <strong>€{{ discount_delta }}</strong> more!
                                         </p>
                                     {% endif %}
                                 </td>
@@ -105,8 +105,8 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'items' %}" class="btn btn-outline mb-1 rounded-0 btn-lg">
+                    <p class="text-center lead mb-5">Your bag is empty.</p>
+                    <a href="{% url 'items' %}" class="btn btn-outline mb-3">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
