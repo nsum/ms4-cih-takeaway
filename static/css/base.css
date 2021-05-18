@@ -214,6 +214,7 @@ a.category-badge > span.badge:hover {
 
 .custom-toast {
     overflow: visible;
+    border: 1px solid #101820;
 }
 
 .toast-capper {
@@ -272,3 +273,29 @@ a.category-badge > span.badge:hover {
 }
 /* / Toast */
 
+
+
+
+/* Media Queries */
+
+/* Up to Medium devices (landscape tablets, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Up to Large devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    #cover-text {
+        top: 20%;
+    }
+}
+
+/* Up to XL devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
