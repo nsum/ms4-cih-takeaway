@@ -17,8 +17,12 @@ class Order(models.Model):
     street_address1 = models.CharField(max_length=80, null=False, blank=False)
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
+    pickup_date = models.DateField(null=False, blank=False)
+    pickup_time = models.TimeField(null=False, blank=False)
+    optional_notes = models.CharField(max_length=254, null=True, blank=True)
     order_discount = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
-    order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
+    order_total = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
 
     def _generate_order_number(self):
@@ -30,8 +34,9 @@ class Order(models.Model):
         super().save(*args, **kwargs)
 
     def update_total(self):
+
         self.order_total = self.lineitems.aggregate(
-            Sum('lineitem_total'))['lineitem_total__sum']
+            Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.DISCOUNT_THRESHOLD:
             self.order_discount = 0
         else:

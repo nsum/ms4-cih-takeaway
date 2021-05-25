@@ -1,13 +1,18 @@
 from django import forms
 from .models import Order
+from django.forms.widgets import DateTimeInput, DateInput, TimeInput
 
 
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
-                  'street_address1', 'street_address2',
-                  'town_or_city', 'postcode',)
+                  'street_address1', 'street_address2', 'town_or_city', 
+                  'postcode', 'optional_notes', 'pickup_date', 'pickup_time')
+        widgets = {
+            'pickup_date': DateInput(attrs={'type': 'date'}),
+            'pickup_time': TimeInput(attrs={'type': 'time'}),
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -19,6 +24,9 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
+            'optional_notes': 'Optional Notes',
+            'pickup_date': 'Pickup Date',
+            'pickup_time': 'Pickup Time',
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
