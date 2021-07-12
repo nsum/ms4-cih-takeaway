@@ -52,8 +52,11 @@
                             <p class="card-text">{{ item.description }}</p>
                             <div class="row text-muted">
                                 <div class="col-6 col-md-3">
-                                    <i class="fas fa-info-circle"></i>
-                                    Allergens: {{ item.allergens }}
+                                    <!-- Allergen information -->
+                                    <a href="#" class="openAllergenInfo text-decoration-none text-muted">
+                                        <i class="fas fa-info-circle"></i>
+                                        Allergens: {{ item.allergens }}
+                                    </a>
                                 </div>
                                 <div class="col-6 col-md-3">Price: €{{ item.price }}</div>
                                 <div class="col-6 col-md-3">
@@ -73,7 +76,30 @@
                             </div>
                             <button type="button" class="openModal{{item.id}} btn order-btn mt-3 btn-primary">Add to basket</button>
                         </div>
-                        <!-- Modal -->
+                        <!-- Allergen Modal -->
+                        <div class="modal fade" id="allergenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h6 class="modal-title">Allergen Information:</h6>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>(D) - Dairy <br> (Ms) - Molluscs <br> (E) - Eggs <br> (M) - Mustard <br> (F) - Fish <br> 
+                                            (C) - Celery <br> (X) - Sulphates <br> (Cr) - Crustaceans <br> (P) - Peanuts <br> 
+                                            (Sb) - Soybeans <br> (M) - Milk <br> (Ss) - Sesame Seeds <br> (L) - Lupin <br>
+                                            (S) - Seeds <br> (G) - Gluten <br> (Gw) - Wheat <br> (Gc) - Wholemeal <br> 
+                                            (Go) - Oats <br> (N) - Nuts <br> (Np) - Pinenuts <br> (Nh) - Hazelnuts <br> (Vo) - Vegan Option <br>
+                                            All our meats, poultry & game are “Feile Bia” approved & our beef is 100% Irish
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Items Modal -->
                         <div class="modal fade" id="myModal{{item.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -160,6 +186,14 @@
 {% block postloadjs %}
 {{ block.super }}
     <!-- Modals -->
+    <!-- Allergens modal-->
+    <script>
+        $('.openAllergenInfo').on('click', function (e) {
+            e.preventDefault();
+            $('#allergenModal').modal('show');
+        });
+    </script>
+    <!-- Items modal-->
     {% for item in items %}
         <script>
             $('.openModal{{item.id}}').on('click', function (e) {
