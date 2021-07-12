@@ -51,7 +51,10 @@
                             <hr>
                             <p class="card-text">{{ item.description }}</p>
                             <div class="row text-muted">
-                                <div class="col-6 col-md-3">Allergens: {{ item.allergens }}</div>
+                                <div class="col-6 col-md-3">
+                                    <i class="fas fa-info-circle"></i>
+                                    Allergens: {{ item.allergens }}
+                                </div>
                                 <div class="col-6 col-md-3">Price: €{{ item.price }}</div>
                                 <div class="col-6 col-md-3">
                                     {% if item.rating %}
@@ -71,7 +74,6 @@
                             <button type="button" class="openModal{{item.id}} btn order-btn mt-3 btn-primary">Add to basket</button>
                         </div>
                         <!-- Modal -->
-                        
                         <div class="modal fade" id="myModal{{item.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -90,7 +92,6 @@
                                                 <div class="col-6">Allergens: {{ item.allergens }}</div>
                                                 <div class="col-6">Price: €{{ item.price }}</div>
                                             </div>
-                                            <!--<a href="{% url 'home' %}" class="btn order-btn btn-primary">Add to basket</a>-->
                                             <form class="form" action="{% url 'add_to_bag' item.id %}" method="POST">
                                                 {% csrf_token %}
                                                 <div class="form-row">
@@ -118,6 +119,15 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <!-- Warning displayed if alcohol is ordered-->
+                                                    <div class="col-12">
+                                                        {% if item.category.name == "beers" or item.category.name == "wines" or item.category.name == "cocktails" %}
+                                                            <span class="text-danger">You are about to order an alcoholic 
+                                                                beverage and may be asked on collection to provide your ID 
+                                                                proving you are of legal drinking age
+                                                            </span>
+                                                        {% endif %} 
                                                     </div>
                                                     <div class="col-12">
                                                         <button type="button" data-dismiss="modal" class="keep-shopping btn btn-outline mt-5">
@@ -158,14 +168,13 @@
             });
         </script>
     {% endfor %}
-
-    <!-- Sorting -->
+    <!-- Back to top button -->
     <script type="text/javascript">
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)
 		})
 	</script>
-    
+    <!-- Sorting -->
     <script type="text/javascript">
         $('#sort-selector').change(function() {
             var selector = $(this);

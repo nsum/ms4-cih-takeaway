@@ -60,17 +60,23 @@
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Name & Email</legend>
+                        <legend class="fieldset-label medium text-black px-2 w-auto">Name & Email:</legend>
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                        <legend class="fieldset-label medium text-black px-2 w-auto">Details:</legend>
+                        <legend class="fieldset-label small text-black px-2 w-auto">Phone Number:</legend>
                         {{ order_form.phone_number | as_crispy_field }}
+                        <legend class="fieldset-label small text-black px-2 w-auto">Eircode:</legend>
                         {{ order_form.postcode | as_crispy_field }}
+                        <legend class="fieldset-label small text-black px-2 w-auto">Address Field 1:</legend>
                         {{ order_form.street_address1 | as_crispy_field }}
+                        <legend class="fieldset-label small text-black px-2 w-auto">Address Field 2:</legend>
                         {{ order_form.street_address2 | as_crispy_field }}
+                        <legend class="fieldset-label small text-black px-2 w-auto">City:</legend>
                         {{ order_form.town_or_city | as_crispy_field }}
+                        <legend class="fieldset-label small text-black px-2 w-auto">Optional Notes:</legend>
                         {{ order_form.optional_notes | as_crispy_field }}
                         <legend class="fieldset-label small text-black px-2 w-auto">Please choose pickup date & time:</legend>
                         {{ order_form.pickup_date | as_crispy_field }}
