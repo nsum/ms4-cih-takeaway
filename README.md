@@ -78,6 +78,3 @@ Hence the idea for this project. This app would make it easy for people to put i
 ### Media
 +	[Hero Image](https://www.corkinternationalairporthotel.com/wp-content/uploads/2021/03/Dinner-Date-1-1920x1080.jpg)
 
-#### Items Images
-+	[Soup of the day](https://m.facebook.com/savouryfare.athlone/photos/a.1392153514442113/2430614370596017/?utm_content=buffer8628b&utm_medium=social&utm_source=bufferapp.com&utm_campaign=buffer)
-
