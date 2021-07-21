@@ -1,6 +1,8 @@
 from django import forms
 from .models import Order
-from django.forms.widgets import DateTimeInput, DateInput, TimeInput
+from django.forms.widgets import DateInput, TimeInput
+
+import datetime
 
 
 class OrderForm(forms.ModelForm):
@@ -10,7 +12,7 @@ class OrderForm(forms.ModelForm):
                   'street_address1', 'street_address2', 'town_or_city', 
                   'postcode', 'optional_notes', 'pickup_date', 'pickup_time')
         widgets = {
-            'pickup_date': DateInput(attrs={'type': 'date'}),
+            'pickup_date': DateInput(attrs={'min': datetime.date.today, 'type': 'date'}),
             'pickup_time': TimeInput(attrs={'type': 'time'}),
         }
 
