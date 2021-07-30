@@ -128,6 +128,14 @@ body {
     border: 1px solid #101820;
 }
 
+.allauth-form-inner-content a {
+    color: black !important;
+}
+
+.allauth-form-inner-content a:hover {
+    color: white !important;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
