@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('checkout', '0007_auto_20210521_0421'),
+        ('checkout', '0006_auto_20210521_0419'),
     ]
 
     operations = [
