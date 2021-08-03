@@ -1,0 +1,1 @@
+web: gunicorn cih_takeaway.wsgi:application
