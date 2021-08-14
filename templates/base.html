@@ -92,14 +92,14 @@
                         <a href="{% url 'items' %}?category=starters,mains,vegan" class="dropdown-item">All Dishes</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'blog' %}">Blog</a>
-                </li>
                 </ul>
             </div>
             <!-- Profile, Search  & bag -->
             <div class="col-12 col-md-6 my-auto py-1 py-sm-0">
                 <ul class="list-inline list-unstyled text-center text-md-right my-0">
+                    <li class="list-inline-item">
+                        <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                    </li>
                     <!-- Search Bar -->
                     <li class="list-inline-item">
                         <form class="form-inline" method="GET" action="{% url 'items' %}">

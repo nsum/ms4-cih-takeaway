@@ -1,22 +1,37 @@
-from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView
-from .models import BlogPost
-from .forms import PostForm
-
-# Create your views here.
+from django.views import generic
+from .models import Post
+from .forms import CommentForm
+from django.shortcuts import render, get_object_or_404
 
 
-class HomeView(ListView):
-    model = BlogPost
-    template_name = 'blog.html'
+class PostList(generic.ListView):
+    queryset = Post.objects.filter(status=1).order_by("-created_on")
+    template_name = "blog.html"
+    paginate_by = 3
 
 
-class BlogDetailView(DetailView):
-    model = BlogPost
-    template_name = 'blog_details.html'
+def post_detail(request, slug):
+    template_name = "post_detail.html"
+    post = get_object_or_404(Post, slug=slug)
+    comments = post.comments.filter(active=True).order_by("-created_on")
+    new_comment = None
 
+    if request.method == "POST":
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            new_comment = comment_form.save(commit=False)
+            new_comment.post = post
+            new_comment.save()
+    else:
+        comment_form = CommentForm()
 
-class AddPostView(CreateView):
-    model = BlogPost
-    form_class = PostForm
-    template_name = 'add_post.html'
+    return render(
+        request,
+        template_name,
+        {
+            "post": post,
+            "comments": comments,
+            "new_comment": new_comment,
+            "comment_form": comment_form,
+        },
+    )

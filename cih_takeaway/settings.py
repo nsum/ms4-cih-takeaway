@@ -52,8 +52,6 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'blog',
-
-    # Other apps
     'crispy_forms',
     'storages',
 ]
@@ -122,6 +120,7 @@ WSGI_APPLICATION = 'cih_takeaway.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
