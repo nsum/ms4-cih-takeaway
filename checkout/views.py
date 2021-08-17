@@ -147,9 +147,12 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
-    messages.success(request, f'Order successfully processed! \
-        Your order number is {order_number}. A confirmation \
-        email will be sent to {order.email}.')
+    if request.user.is_authenticated:
+        messages.success(request, f'Order successfully processed! \
+        Your order number is {order_number}. You can find a copy of your order in Order History on your Profile')
+    else:
+        messages.success(request, f'Order successfully processed! \
+        Your order number is {order_number}. Please make note of your Order.')
 
     if 'bag' in request.session:
         del request.session['bag']

@@ -15,7 +15,18 @@
                 <hr>
                 <h2 class="mb-4">Thank You</h2>
                 <hr>
-                <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+                <p class="text-black">
+                    Your order information is below. 
+                    {% if order.user_profile %}
+                        Copy of this order is saved to your <strong>Order History</strong>.
+                    {% else %}
+                        <p>
+                            <strong>
+                                Make sure to take note of your order as only logged in users can access their order history. 
+                            </strong>
+                        </p>
+                    {% endif %}
+                </p>
             </div>
         </div>
 
