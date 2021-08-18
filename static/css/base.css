@@ -203,7 +203,7 @@ a.category-badge > span.badge:hover {
 
 .btn-outline:hover {
     font-weight: 700;
-    border: 2px solid #101820;
+    background-color:rgba(16, 24, 32, 0.3)
 }
 
 .bag-row {
@@ -340,7 +340,7 @@ a.category-badge > span.badge:hover {
 
 /* Up to Medium devices (landscape tablets, 600px and down) */
 @media only screen and (max-width: 600px) {
-    
+
 }
 
 /* Up to Large devices (landscape tablets, 768px and down) */

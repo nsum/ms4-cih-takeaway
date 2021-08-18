@@ -22,9 +22,9 @@
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            67 statements &nbsp;
+            68 statements &nbsp;
             <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">15 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">52 missing</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">53 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -108,13 +108,13 @@
     <p id="t54" class="mis show_mis"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="nam">billing_details</span> <span class="op">=</span> <span class="nam">intent</span><span class="op">.</span><span class="nam">charges</span><span class="op">.</span><span class="nam">data</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span class="op">.</span><span class="nam">billing_details</span>&nbsp;</span><span class="r"></span></p>
     <p id="t55" class="mis show_mis"><span class="n"><a href="#t55">55</a></span><span class="t">        <span class="nam">grand_total</span> <span class="op">=</span> <span class="nam">round</span><span class="op">(</span><span class="nam">intent</span><span class="op">.</span><span class="nam">charges</span><span class="op">.</span><span class="nam">data</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span class="op">.</span><span class="nam">amount</span> <span class="op">/</span> <span class="num">100</span><span class="op">,</span> <span class="num">2</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t56" class="pln"><span class="n"><a href="#t56">56</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t57" class="pln"><span class="n"><a href="#t57">57</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t58" class="pln"><span class="n"><a href="#t58">58</a></span><span class="t">        <span class="com"># Update profile information if save_info was checked</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t59" class="mis show_mis"><span class="n"><a href="#t59">59</a></span><span class="t">        <span class="nam">profile</span> <span class="op">=</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t60" class="mis show_mis"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="nam">username</span> <span class="op">=</span> <span class="nam">intent</span><span class="op">.</span><span class="nam">metadata</span><span class="op">.</span><span class="nam">username</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t61" class="mis show_mis"><span class="n"><a href="#t61">61</a></span><span class="t">        <span class="key">if</span> <span class="nam">username</span> <span class="op">!=</span> <span class="str">'AnonymousUser'</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t62" class="mis show_mis"><span class="n"><a href="#t62">62</a></span><span class="t">            <span class="nam">profile</span> <span class="op">=</span> <span class="nam">UserProfile</span><span class="op">.</span><span class="nam">objects</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">user__username</span><span class="op">=</span><span class="nam">username</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t63" class="mis show_mis"><span class="n"><a href="#t63">63</a></span><span class="t">            <span class="key">if</span> <span class="nam">save_info</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t57" class="pln"><span class="n"><a href="#t57">57</a></span><span class="t">        <span class="com"># Update profile information if save_info was checked</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t58" class="mis show_mis"><span class="n"><a href="#t58">58</a></span><span class="t">        <span class="nam">profile</span> <span class="op">=</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t59" class="mis show_mis"><span class="n"><a href="#t59">59</a></span><span class="t">        <span class="nam">username</span> <span class="op">=</span> <span class="nam">intent</span><span class="op">.</span><span class="nam">metadata</span><span class="op">.</span><span class="nam">username</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t60" class="mis show_mis"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="key">if</span> <span class="nam">username</span> <span class="op">!=</span> <span class="str">'AnonymousUser'</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t61" class="mis show_mis"><span class="n"><a href="#t61">61</a></span><span class="t">            <span class="nam">profile</span> <span class="op">=</span> <span class="nam">UserProfile</span><span class="op">.</span><span class="nam">objects</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">user__username</span><span class="op">=</span><span class="nam">username</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t62" class="mis show_mis"><span class="n"><a href="#t62">62</a></span><span class="t">            <span class="key">if</span> <span class="nam">save_info</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t63" class="mis show_mis"><span class="n"><a href="#t63">63</a></span><span class="t">                <span class="nam">profile</span><span class="op">.</span><span class="nam">full_name__iexact</span><span class="op">=</span><span class="nam">billing_details</span><span class="op">.</span><span class="nam">name</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t64" class="mis show_mis"><span class="n"><a href="#t64">64</a></span><span class="t">                <span class="nam">profile</span><span class="op">.</span><span class="nam">default_phone_number</span> <span class="op">=</span> <span class="nam">billing_details</span><span class="op">.</span><span class="nam">phone</span>&nbsp;</span><span class="r"></span></p>
     <p id="t65" class="mis show_mis"><span class="n"><a href="#t65">65</a></span><span class="t">                <span class="nam">profile</span><span class="op">.</span><span class="nam">default_postcode</span> <span class="op">=</span> <span class="nam">billing_details</span><span class="op">.</span><span class="nam">address</span><span class="op">.</span><span class="nam">postal_code</span>&nbsp;</span><span class="r"></span></p>
     <p id="t66" class="mis show_mis"><span class="n"><a href="#t66">66</a></span><span class="t">                <span class="nam">profile</span><span class="op">.</span><span class="nam">default_town_or_city</span> <span class="op">=</span> <span class="nam">billing_details</span><span class="op">.</span><span class="nam">address</span><span class="op">.</span><span class="nam">city</span>&nbsp;</span><span class="r"></span></p>
@@ -197,7 +197,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-08-13 09:55 +0000
+            created at 2021-08-17 03:51 +0000
         </p>
     </div>
 </div>

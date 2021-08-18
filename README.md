@@ -1,12 +1,12 @@
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 
-![logo](**insert logo** "nsum logo")
+![logo](/media/readme-files/nsum.png "nsum logo")
 
 #### Code Institute - Milestone Project 4
 ## Full Stack Web App 
 ## Cork International Hotel Takeaway Service
-![Am I Responsive](**insert link**)
-[View the project live here](**insert link**)
+![Am I Responsive](/media/readme-files/responsive.png)
+[View the project live here](https://ms4-cih-takeaway.herokuapp.com/)
 ## Introduction
 Welcome,
 This Full Stack Web App was made as a 4th Milestone Project with Code Institute.
@@ -45,7 +45,7 @@ Hence the idea for this project. This app would make it easy for people to put i
     3. I want my payment to be securely proccessed
     4. I want to receive confirmation email with my order details
 
-## Wireframes
++ ## Wireframes
     + [Index Page - Desktop](/media/readme-files/home.png) 
     + [Basket - Desktop](/media/readme-files/basket.png) 
     + [Checkout - Desktop](/media/readme-files/checkout.png) 
