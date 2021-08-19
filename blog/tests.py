@@ -23,8 +23,8 @@ class TestPostModel(TestCase):
         self.assertTrue(post.title, 'Test title')
         self.assertTrue(isinstance(post, Post))
         self.assertEqual(str(post), post.title)
-    
-    
+
+
 class TestCommentModel(TestCase):
 
     def test_comment(self):
@@ -52,4 +52,6 @@ class TestCommentModel(TestCase):
         self.assertTrue(comment.name, 'Max')
         self.assertTrue(comment.body, 'Test comment body')
         self.assertTrue(isinstance(comment, Comment))
-        self.assertEqual(str(comment), "Comment {} by {}".format(comment.body, comment.name))
+        self.assertEqual(
+            str(comment), "Comment {} by {}".format(
+                comment.body, comment.name))

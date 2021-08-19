@@ -9,10 +9,11 @@ class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',
-                  'street_address1', 'street_address2', 'town_or_city', 
+                  'street_address1', 'street_address2', 'town_or_city',
                   'postcode', 'optional_notes', 'pickup_date', 'pickup_time')
         widgets = {
-            'pickup_date': DateInput(attrs={'min': datetime.date.today, 'type': 'date'}),
+            'pickup_date': DateInput(
+                attrs={'min': datetime.date.today, 'type': 'date'}),
             'pickup_time': TimeInput(attrs={'type': 'time'}),
         }
 

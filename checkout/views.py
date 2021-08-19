@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.contrib import messages
 from django.conf import settings
 from django.views.decorators.http import require_POST
@@ -26,8 +27,9 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(
-            request, 'Problem proccessing payment at the moment. Try again later')
+        messages.error(request,
+                       'Problem proccessing payment at the moment. \
+                        Try again later')
         return HttpResponse(content=e, status=400)
 
 
@@ -70,14 +72,16 @@ def checkout(request):
                         order_line_item.save()
                 except Item.DoesNotExist:
                     messages.error(request, (
-                        "One of the items in your bag wasn't found in our database. "
+                        "One of the items in your bag wasn't \
+                        found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(reverse(
+                'checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
@@ -85,7 +89,8 @@ def checkout(request):
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(
+                request, "There's nothing in your bag at the moment")
             return redirect(reverse('items'))
 
         current_bag = bag_contents(request)
@@ -149,7 +154,8 @@ def checkout_success(request, order_number):
 
     if request.user.is_authenticated:
         messages.success(request, f'Order successfully processed! \
-        Your order number is {order_number}. You can find a copy of your order in Order History on your Profile')
+        Your order number is {order_number}. \
+        You can find a copy of your order in Order History on your Profile')
     else:
         messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. Please make note of your Order.')

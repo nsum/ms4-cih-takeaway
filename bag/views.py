@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404)
 from items.models import Item
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -24,7 +25,8 @@ def add_to_bag(request, item_id):
 
     else:
         bag[item_id] = quantity
-        messages.success(request, f'Added {bag[item_id]} {item.name} to your bag')
+        messages.success(
+            request, f'Added {bag[item_id]} {item.name} to your bag')
 
     request.session['bag'] = bag
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
@@ -38,7 +40,8 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated {item.name} quantity to {bag[item_id]}')
+        messages.success(
+            request, f'Updated {item.name} quantity to {bag[item_id]}')
     else:
         bag.pop(item_id)
         messages.success(request, f'Removed {item.name} from the bag')
