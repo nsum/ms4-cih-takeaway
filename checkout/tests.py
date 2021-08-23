@@ -5,7 +5,6 @@ import datetime
 
 
 class TestOrder(TestCase):
-
     def test_order(self):
         order = Order()
         order.pickup_time = datetime.time(10, 0)

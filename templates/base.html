@@ -52,46 +52,46 @@
             <!-- Nav links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        All Items
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a href="{% url 'items' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                        <a href="{% url 'items' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                        <a href="{% url 'items' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Drinks
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a href="{% url 'items' %}?category=wines" class="dropdown-item">Wines</a>
-                        <a href="{% url 'items' %}?category=beers" class="dropdown-item ">Beers</a>
-                        <a href="{% url 'items' %}?category=cocktails" class="dropdown-item ">Cocktails</a>
-                        <a href="{% url 'items' %}?category=soft_drinks" class="dropdown-item ">Soft Drinks & Waters</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="{% url 'items' %}?category=wines,beers,cocktails,soft_drinks" class="dropdown-item">All Drinks</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'items' %}?category=desserts">Desserts</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dishes
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a href="{% url 'items' %}?category=starters" class="dropdown-item">Starters</a>
-                        <a href="{% url 'items' %}?category=mains" class="dropdown-item ">Mains</a>
-                        <a href="{% url 'items' %}?category=vegan" class="dropdown-item ">Vegan Options</a>
-                        <div class="dropdown-divider"></div>
-                        <a href="{% url 'items' %}?category=starters,mains,vegan" class="dropdown-item">All Dishes</a>
-                    </div>
-                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All Items
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="{% url 'items' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                            <a href="{% url 'items' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                            <a href="{% url 'items' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="{% url 'items' %}" class="dropdown-item">All Items</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Drinks
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="{% url 'items' %}?category=wines" class="dropdown-item">Wines</a>
+                            <a href="{% url 'items' %}?category=beers" class="dropdown-item ">Beers</a>
+                            <a href="{% url 'items' %}?category=cocktails" class="dropdown-item ">Cocktails</a>
+                            <a href="{% url 'items' %}?category=soft_drinks" class="dropdown-item ">Soft Drinks & Waters</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="{% url 'items' %}?category=wines,beers,cocktails,soft_drinks" class="dropdown-item">All Drinks</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'items' %}?category=desserts">Desserts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dishes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a href="{% url 'items' %}?category=starters" class="dropdown-item">Starters</a>
+                            <a href="{% url 'items' %}?category=mains" class="dropdown-item ">Mains</a>
+                            <a href="{% url 'items' %}?category=vegan" class="dropdown-item ">Vegan Options</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="{% url 'items' %}?category=starters,mains,vegan" class="dropdown-item">All Dishes</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <!-- Profile, Search  & bag -->
@@ -180,9 +180,9 @@
 
     <!-- Additional JS -->
     {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
+        <script type="text/javascript">
+            $('.toast').toast('show');
+        </script>
     {% endblock %}
 </body>
 </html>

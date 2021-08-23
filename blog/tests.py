@@ -6,7 +6,6 @@ from django.contrib.auth.models import User
 
 
 class TestPostModel(TestCase):
-
     def test_post_created(self):
         author = User(username='Jack')
         author.save()
@@ -26,7 +25,6 @@ class TestPostModel(TestCase):
 
 
 class TestCommentModel(TestCase):
-
     def test_comment(self):
         author = User(username='Jack')
         author.save()

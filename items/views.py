@@ -4,7 +4,6 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-
 # Create your views here.
 
 
@@ -34,6 +33,7 @@ def all_items(request):
             items = items.filter(category__name__in=categories)
 
             categories = Category.objects.filter(name__in=categories)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
