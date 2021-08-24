@@ -175,6 +175,11 @@ a.category-badge > span.badge:hover {
     color: #f2aa4c !important;
 }
 
+/* Post spacing */
+.post-text {
+    white-space: pre-wrap;
+}
+
 /* Back to top btn */
 .btt-button {
     height: 42px;

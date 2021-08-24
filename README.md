@@ -85,7 +85,7 @@ Hence the idea for this project. This app would make it easy for people to put i
     1. I want some kind of incentive to register and use the site
     2. I want to be able to see my order history
 
-+   ### Users With Special Diatery Requirements
++   ### Users With Special Dietary Requirements
     1. As someone who has Gluten intolerance, I want to be able to be able to distinguish Gluten-free meals
     2. As a vegan, I want to be able to easily distinguish Vegan options from non-vegan ones
     3. As someone with allergies, I want the menu to have information on any allergens in the meals or drinks
@@ -422,7 +422,7 @@ Hence the idea for this project. This app would make it easy for people to put i
         - registered users have access to their order history and their information is stored for quicker consecutive ordering
     2. I want to be able to see my order history
         - logged in users have access to their order history by visiting their profile page
-+   #### Testing Users With Special Diatery Requirements
++   #### Testing Users With Special Dietary Requirements
     1. As someone who has Gluten intolerance, I want to be able to be able to distinguish Gluten-free meals
         - every item contains item's allergen information on it's detail view
     2. As a vegan, I want to be able to easily distinguish Vegan options from non-vegan ones
