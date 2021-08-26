@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="text-center mt-5">
+        <h1><strong>5</strong><span class="text-muted">0</span><strong>0</strong> error</h1>
+        <h2>Oops! Something Went Wrong</h2>
+        <h4 class="text-muted">The server encountered an unexpected condition</h4>
+        <a class="order-btn btn btn-warning mt-3 btn-lg text-uppercase" href="{% url 'home' %}" role="button"><strong>Take me Home</strong></a>
+    </div>
+{% endblock %}

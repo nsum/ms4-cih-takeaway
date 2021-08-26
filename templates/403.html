@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="text-center mt-5">
+        <h1><strong>403</strong> Forbidden</h1>
+        <h2>You don't have permission to access this resource</h2>
+        <a class="order-btn btn btn-warning mt-3 btn-lg text-uppercase" href="{% url 'home' %}" role="button"><strong>Take me Home</strong></a>
+    </div>
+{% endblock %}
