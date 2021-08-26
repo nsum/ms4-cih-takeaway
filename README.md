@@ -18,57 +18,74 @@ Hence the idea for this project. This app would make it easy for people to put i
 
 
 ## Table of Contents
+**<details><summary>User Experience (UX)</summary>**
+* [User Stories](#user-stories)
+* [Wireframes](#wireframes)
+* [Design](#design)
+</details>
 
-1. [User Experience (UX)](#user-experience)
-    - [User Stories](#user-stories)
-    - [Wireframes](#wireframes)
-    - [Design](#design)
-2. [Test Usage](#test-usage)
-    - [Profile](#profile)
-    - [Test Payments](#test-payments)
-    - [Stripe Test CC](#stripe-test-credit-card)
-3. [Techonologies Used](#technologies-used)
-    - [Languages](#languages-used)
-    - [Frameworks, Libraries & Tools Used](#frameworks-libraries-tools-used)
-4. [Features](#features)
-    - [General Features](#shared-features)
-    - [Navbar](#navbar)
-    - [Toast Messages](#toast-messages)
-    - [Blog](#blog)
-    - [Homepage](#homepage)
-    - [Items](#items)
-    - [Shopping Bag](#shopping-bag)
-    - [Checkout](#checkout)
-    - [Profile](#profile)
-    - [Django-allauth](#django-allauth)
-    - [Automatic E-mails](#automatic-e-mails)
-5. [Testing](#testing)
-    - [Valdators](#validators)
-    - [Automated Testing](#automated-testing)
-    - [Manual Testing Procedures](#manual-testing-procedures):
-        - [Navigating The Site](#testing-navigating-the-site)
-        - [Login](#login-testing)
-        - [Logout](#log-out-testing)
-        - [Register New User](#register-new-user-testing)
-        - [Browsing & Adding Items to Shopping Bag](#browsing-and-adding-items-to-shopping-bag)
-        - [Shopping Bag](#bag-testing)
-        - [Checkout](#checkout-testing)
-        - [Blog](#blog-testing)
-        - [Post Comments](#post-comments)
-        - [Profile Info and Order History](#profile-info-and-order-history)
-        - [Search Bar](#search-bar)
-    - [Unresolved Issues](#unresolved-issues)
-    - [Testing User Stories from User Experience (UX) Section](#testing-user-stories):
-        - [First Time Visitors](#testing-first-time-visitors)
-        - [Non-registered Users](#testing-non-registered-users)
-        - [Registered & Regular Visitors](#testing-registered-and-regular-visitors)
-        - [Users With Special Diatery Requirements](#testing-users-with-special-diatery-requirements)
-        - [Ordering & Purchasing](#testing-ordering-and-purchasing)
-6. [Data Models](#data-models)
-    - [Blog App Models](#blog-app)
-    - [Checkout App Models](#checkout-app)
-    - [Items App Models](#items-app)
-    - [Profiles App Models](#profiles-app)
+**<details><summary>Test Usage</summary>**
+* [Profile](#profile)
+* [Test Payments](#test-payments)
+* [Stripe Test CC](#stripe-test-credit-card)
+</details>
+
+**<details><summary>Techonologies Used</summary>**
+* [Languages](#languages-used)
+* [Frameworks, Libraries & Tools Used](#frameworks-libraries-tools-used)
+</details>
+
+**<details><summary>Features</summary>**
+* [General Features](#shared-features)
+* [Navbar](#navbar)
+* [Toast Messages](#toast-messages)
+* [Blog](#blog)
+* [Homepage](#homepage)
+* [Items](#items)
+* [Shopping Bag](#shopping-bag)
+* [Checkout](#checkout)
+* [Profile](#profile)
+* [Django-allauth](#django-allauth)
+* [Automatic E-mails](#automatic-e-mails)
+</details>
+
+**<details><summary>Testing</summary>**
+* [Validators](#validators)
+* [Automated Testing](#automated-testing)
+* [Manual Testing Procedures](#manual-testing-procedures):
+    * [Navigating The Site](#testing-navigating-the-site)
+    * [Login](#login-testing)
+    * [Logout](#log-out-testing)
+    * [Register New User](#register-new-user-testing)
+    * [Browsing & Adding Items to Shopping Bag](#browsing-and-adding-items-to-shopping-bag)
+    * [Shopping Bag](#bag-testing)
+    * [Checkout](#checkout-testing)
+    * [Blog](#blog-testing)
+    * [Post Comments](#post-comments)
+    * [Profile Info and Order History](#profile-info-and-order-history)
+    * [Search Bar](#search-bar)
+    * [Unresolved Issues](#unresolved-issues)
+    * [Testing User Stories from User Experience (UX) Section](#testing-user-stories):
+        * [First Time Visitors](#testing-first-time-visitors)
+        * [Non-registered Users](#testing-non-registered-users)
+        * [Registered & Regular Visitors](#testing-registered-and-regular-visitors)
+        * [Users With Special Diatery Requirements](#testing-users-with-special-diatery-requirements)
+        * [Ordering & Purchasing](#testing-ordering-and-purchasing)
+</details>
+
+**<details><summary>Data Models</summary>**
+* [Blog App Models](#blog-app)
+* [Checkout App Models](#checkout-app)
+* [Items App Models](#items-app)
+* [Profiles App Models](#profiles-app)
+</details>
+
+**<details><summary>Deployment</summary>**
+* [Local Deployment](#local-deployment)
+* [Heroku Deployment](#deployment-to-heroku)
+</details>
+
+---
 
 # User Experience
 +   ## User Stories
@@ -108,7 +125,7 @@ Hence the idea for this project. This app would make it easy for people to put i
 
 
 
-
+---
 # Test Usage
 +   ### Profile
     - Application allows anonymous purchases
@@ -123,6 +140,7 @@ Hence the idea for this project. This app would make it easy for people to put i
     - CVC: Any 3-digit number
     - ZIP: Any 5-digit number
 
+---
 # Technologies Used
 
 ### Languages Used
@@ -151,20 +169,7 @@ Hence the idea for this project. This app would make it easy for people to put i
 + [SQLite:](https://www.sqlite.org/index.html) was used as db during development
 + [Heroku Postgres:](https://www.postgresql.org/) was used as attached database on Heroku used for deployed version of the app 
 
-### Media
-+	[Hero Image](https://www.corkinternationalairporthotel.com/wp-content/uploads/2021/03/Dinner-Date-1-1920x1080.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
+---
 # Features
 +   ### Shared Features
     - Is fully mobile responsive and reacts to changes in screen size. It also allows for collapsible menu on mobile screens.
@@ -216,11 +221,7 @@ Hence the idea for this project. This app would make it easy for people to put i
     - After signing up, a verification e-mail is sent to the registered e-mail to confirm it. Once confirmed, the user can log in with their credentials and access the profiles app.
 +   ### Automatic e-mails
     - A Gmail account is set up for this project and used as a sender for all verification, reset and confirmation e-mails.
-
-
-
-
-
+---
 
 # Testing
 ### Validators
@@ -229,9 +230,6 @@ Hence the idea for this project. This app would make it easy for people to put i
     -   [Lighhouse Tool](https://developers.google.com/web/tools/lighthouse) - [Results](/media/readme-files/lighthouse.png)
     -   [W3C HTML Validator](https://validator.w3.org/nu/) - Was returning "Duplicate ID" errors due to jinja for loops.
 
-
-
-
 ### Automated Testing
 +   I wished to create more tests but as submission deadline approaching it was not possible.
     Below models tests were made to familiarize with testing procedures and practices.
@@ -239,7 +237,6 @@ Hence the idea for this project. This app would make it easy for people to put i
     - Tested blog models with 93% coverage - [blog/tests.py](/blog/tests.py)
 +   #### Checkout Models
     - Tested checkout models with 94% coverage - [checkout/tests.py](/checkout/tests.py)
-
 
 ### Manual Testing Procedures
 +   #### Testing Navigating The Site
@@ -403,7 +400,6 @@ Hence the idea for this project. This app would make it easy for people to put i
 - Abrupting the complete order proccess:
     If the browser is forcefully closed or there is a loss of connection just after clicking complete order but before the page has refreshed and submitted the data, Stripe will receive the payment but the order won't be completed on the site. Bag will still show same items and admin panel won't have the order under the orders.
 
-
 ### Testing User Stories
 +   #### Testing First Time Visitors
     1. I want to be able to easily understand the purpose of the site and easily navigate it
@@ -436,51 +432,7 @@ Hence the idea for this project. This app would make it easy for people to put i
         - Shopping bag contains all the items with their descriptions, prices, quantities and totals. Going forward to checkout again contains entire order summary with all the items, quantities and prices
     3. I want my payment to be securely proccessed
         - Stripe and Django handle secure processing of the payment
-=====================================================
-MS3==================================================
-=====================================================
-
-
-
-5. [Testing](#testing)
-    - [Valdators](#validators)
-    - [Manual Testing Procedures](#manual-testing-procedures):
-        - [Navigating The Site](#navigating-the-site)
-        - [Login](#login)
-        - [Logout](#log-out)
-        - [Register New User](#register-new-user)
-        - [Creating new task](#creating-new-task)
-        - [Editing tasks](#editing-tasks)
-        - [Completing the task](#completing-the-task)
-        - [Deleting the task](#deleting-the-task)
-        - [Testing the lists](#testing-the-lists)
-    - [Unresolved Issues](#unresolved-issues)
-    - [Bugs & Fixes](#bugs-and-fixes)
-    - [Coding Process](#coding-process)
-    - [Testing User Stories from User Experience (UX) Section](#testing-user-stories):
-
-6. [Data Schema](#data-schema)
-    - [Tasks Collection](#tasks-collection)
-    - [Departments Collection](#departments-collection)
-    - [Users Collection](#users-collection)
-
-7. [Credits](#credits)
-    - [Code](#code)
-    - [Acknowledgements](#acknowledgements)
-    - [Media](#media)
-
-8. [Deployment](#deployment)
-    - [Forking the GitHub Repository](#forking-the-github-repository)
-    - [Making a Local Clone](#making-a-local-clone)
-    - [How to run this project locally](#how-to-run-this-project-locally)
-    - [Heroku Deployment](#heroku-deployment)
-
-9. [Contact](#contact)
-
-
-
-
-
+---
 
 # Data Models
 +   Django's default SQLite3 was used as a database during the development fase, while Heroku's add-on PostgreSQL database is used in deployed version of the project.
@@ -558,151 +510,291 @@ MS3==================================================
     | City          | default_town_or_city | models.CharField | max_length=40, null=True, blank=True |
     | Address 1     | default_street_address1 | models.CharField | max_length=80, null=True, blank=True |
     | Address 2     | default_street_address2 | models.CharField | max_length=80, null=True, blank=True |
-
-
-============
+---
 
 # Credits
-
-### Code
-+	[Alvin Wang](https://github.com/Dogfalo) - `select.js` which solves the issue with form select on mobile
 
 ### Acknowledgements
 +   [Spencer Barriball](http://www.5pence.net/) - Huge thank you to my mentor Spencer for all his help and guidance
 +   [codeinstitute.net](https://codeinstitute.net/) - Lessons, videos, tutoring & support
-+   [Cork International Hotel](https://www.corkinternationalairporthotel.com/) - For showing interest in using this app
-+   [Anna Greaves](https://github.com/AJGreaves) - For README.md Heroku deployment section
-+   [Code Institute Sample README](https://github.com/Code-Institute-Solutions/SampleREADME) - Readme Template
++   [Cork International Hotel](https://www.corkinternationalairporthotel.com/) - Menu items & Hero Image
++   [Sean McMahon](https://github.com/Sean-Mc-Mahon) - Readme deployment section
+
+### Articles
++	[The Peanut Puzzle](https://www.newyorker.com/magazine/2011/02/07/the-peanut-puzzle) - by Jerome Groopman
++	[The Secret Life of Cheese](https://roadsandkingdoms.com/2015/the-secret-life-of-cheese/) - Mark Hay
++	[How Junk Food Can End Obesity](https://www.theatlantic.com/magazine/archive/2013/07/how-junk-food-can-end-obesity/309396/) - David H. Freedman
++	[Fruit of the Future](https://www.saveur.com/article/Kitchen/Fruit-of-the-Future/) - by Dan Koeppel
++	[The Vitamin Myth](https://www.theatlantic.com/health/archive/2013/07/the-vitamin-myth-why-we-think-we-need-supplements/277947/) - by Paul Offit
 
 ### Media
-+	[Parallax Image 1](https://cf.bstatic.com/images/hotel/max1024x768/653/65346226.jpg)
-+	[Parallax Image 2](https://www.corkinternationalairporthotel.com/wp-content/uploads/2019/07/lobby-003.jpg)
++	[Hero Image](https://www.corkinternationalairporthotel.com/wp-content/uploads/2021/03/Dinner-Date-1-1920x1080.jpg)
+---
 
 # Deployment
++   ### Local Deployment
+    1. This repository may be cloned directly into an editor by pasting the following command into the terminal:   
+        ````
+        git clone https://github.com/nsum/ms4-cih-takeaway
 
-### Forking the GitHub Repository
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+    Alternatively, you can save a copy of this repository by clicking the green button "Clone or download" , then "Download Zip" button, and after extract the Zip file to your folder.
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+    2. In the terminal window change directory (CD) to the correct file location (directory that you have just created).
 
-### Making a Local Clone
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
+    3. Install all requirements from the **requirements.txt** file putting this command into your terminal:
+        ```
+        pip3 install -r requirements.txt
+        ```
 
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
+    *Note: GitPod does not require `sudo`, so if you use another IDE, you will need to include `sudo` in the beginning of the command: `sudo pip3 install -r requirements.txt`.*
 
-7. Press Enter. Your local clone will be created.
+    4. Set up the following environment variables to use the full functionality of the site.
 
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
+        - SECRET_KEY = your secret key.
+        - STRIPE_PUBLIC_KEY = your stripe public key.
+        - STRIPE_SECRET_KEY = your stripe secret key.
+        - STRIPE_WH_SECRET = your stripe webhook secret.
+        - DEVELOPMENT = 'True' 
 
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) 
-    to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+        - Your stripe variables can be found on your stripe dashboard.
+        - You can generate a Django secret key here. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
+    5. Then migrate:
+        ```
+        $ python manage.py migrate
+        ```
+    6. Populate using relavant fixtures:
+        ```
+        $ python manage.py loaddata fixtures/<filename>.json
+        ```
+    7. Create a superuser:
 
-### How to run this project locally
-To run this project on your own IDE follow the instructions below:
-Ensure you have the following tools: 
-- An IDE such as [Visual Studio Code](https://code.visualstudio.com/)
+        ```
+        $ python manage.py createsuperuser
+        ```
 
-The following **must be installed** on your machine:
-- [PIP](https://pip.pypa.io/en/stable/installing/)
-- [Python 3](https://www.python.org/downloads/)
-- [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
-- An account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or MongoDB running locally on your machine. 
-    - How to set up your Mongo Atlas account [here](https://docs.atlas.mongodb.com/).
+    8. You will now be able to run the application using the following command 
 
-#### Instructions
-1. Save a copy of the github repository located at https://github.com/nsum/ms3-hotel-task-manager by clicking 
-the "download zip" button at the top of the page and extracting the zip file to your chosen folder. If you have Git installed on your system, you can clone the repository with the following command.
-```
-git clone https://github.com/nsum/ms3-hotel-task-manager
-```
+        ```
+        $ python3 manage.py runserver
+        ```
 
-2. If possible open a terminal session in the unzip folder or cd to the correct location.
++   ### Deployment to Heroku
 
-3. A virtual environment is recommended for the Python interpreter, I recommend using Pythons built in virtual environment. Enter the command:
-```
-python -m .venv venv
-```  
-_NOTE: Your Python command may differ, such as python3 or py_
+    The app may be deployed to Heroku using the following steps:
 
-4. Activate the .venv with the command:
-```
-.venv\Scripts\activate 
-```
-_Again this **command may differ depending on your operating system**, please check the [Python Documentation on virtual environments](https://docs.python.org/3/library/venv.html) for further instructions._
+    - **Create an app on the Heroku website.**
+        - Click on the new button.
+        - Click on the create a new app.
+        - Give the app a name and choose current region.
+        - Select create app.
 
-4. If needed, Upgrade pip locally with
-```
-pip install --upgrade pip.
-```
+    - **Set up Postgres Database**
+    - Heroku
+        - In the app resources search for Postgres
+        - Add to the project and, choosing the free plan.
+        - To use Postgres install 2 dependencies.
+            - dj_database_url
+            - psycopg2
 
-5. Install all required modules with the command 
-```
-pip -r requirements.txt.
-```
+    - **In Project.**
+        - Install the two packages needed 
+            ``` 
+                pip3 install dj_database_url
+            ```
+        
+            ```
+                pip3 install psycopg2_binary
+            ```
+        - Add them to the requirements.txt file
+            ```
+            pip3 freeze > requirements.txt
+            ```
+        - In settings.py import dj_database_url
+            ``` python
+            import dj_database_url
+            ```
+        - Comment out the current database settings.
+        - Replace them with the settings for the Postgres database.
+            ``` python
+                DATABASES = {
+                    'default': dj_database_url.parse('DATABASE_URL')
+                }
+            ```
+        - Get database URL from app config settings.
 
-6. In your local IDE create a file called `.env.py`.
+        - Then migrate:
+            ```
+            $ python manage.py migrate
+            ```
 
-7. Inside the .env file, create a SECRET_KEY variable and a MONGO_URI to link to your own database. 
+        - Populate using relavant fixtures:
+            ```
+            $ python manage.py loaddata fixtures/<filename>.json
+            ```
 
-8. You can now run the application with the command
-```
-python app.py
-```
+        - Create a superuser:
+            ```
+            $ python manage.py createsuperuser
+            ```
+        
+        - Commit changes making sure to remove database URL beforehand so it isn't saved in version control.
 
-9. You can visit the website at `http://127.0.0.1:5000`
+        - Create an if-else statement in the settings.py to use Postgres if the DATABASE_URL variable is available and if not use the default database
+            ``` python
+                if "DATABASE_URL" in os.environ:
+                    DATABASES = {
+                        "default": dj_database_url.parse(os.environ.get('DATABASE_URL'))
+                    }
+                else:
+                    DATABASES = {
+                        'default': {
+                            'ENGINE': 'django.db.backends.sqlite3',
+                            'NAME': BASE_DIR / 'db.sqlite3',
+                        }
+                    }
+            ```
+        
+        - The Postgres database is now ready for use.
 
-### Heroku Deployment
+    - **Gunicorn**
+        - For the app to work install Greenunicorn.
+        - To install:
+            ```
+            pip3 install Gunicorn
+            ```
+        - Create a Procfile to let Heroku know how to run the app:
+            ``` 
+                touch Procfile
+            ```
+        - Then in Procfile place the following code:
+            ```
+                web: gunicorn <app name>.wsgi:application
+            ```
 
-To deploy this app to heroku, take the following steps:
+    - **Heroku in the command line.**
+        - Log into Heroku using the terminal.
+            ```
+                heroku login -i
+            ```
+        - Temporarily disable the static files until they have been set up on Amazon Aws.
+            ```
+                heroku config:set DISABLE_COLLECTSTATIC=1 --app <app name>
+            ```
+            - Use the --app command if you have more than one Heroku app.
+        - Then in settings, add Heroku into allowed hosts, and localhost so the project can still be run locally.
+            ``` python
+                ALLOWED_HOSTS = ["<heroku app name>.herokuapp.com", "localhost"]
+            ```
+        - Commit changes to Github.
+        - Then set up pushing to Heroku
+            ```
+                heroku git:remote -a <heroku app name>
+            ```
+        - Then push the project to Heroku
+            ```
+                git push heroku master
+            ```
+        - Heroku will now build your app.
 
-1. Create a `requirements.txt` file using the terminal command `pip freeze > requirements.txt`.
+    - **Heroku Website**
 
-2. Create a `Procfile` with the terminal command `echo web: python app.py > Procfile`.
+        - Connect app to GitHub by opening the Deploy section.
+        - Searched for the repository.
+        - Connect and then enabled Automatic Deploys.
+        - This now means that any changes pushed to GitHub will be automatically pushed to Heroku as well.
 
-3. `git add` and `git commit` the new requirements and Procfile and then `git push` the project to GitHub.
+    - ### Amazon AWS
 
-3. Create a new app on the [Heroku website](https://dashboard.heroku.com/apps) by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+        - Amazon AWS was used to store both static files and media files.
+        - Firstly create an AWS account and work through the sign-up process. Once account is set up set the project up on AWS.
 
-4. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+        - **Create a bucket.**
 
-5. Confirm the linking of the heroku app to the correct GitHub repository.
+            - #### Create the bucket:
+                - Create a new bucket on the AWS S3 service.
+                - From the main dashboard search for S3 and then click to get started.
+                - Click on the Create bucket button.
+                - Give the bucket a name and select region.
+                - Then uncheck the block public access and acknowledge that the bucket will now be public.
+                - Then click create bucket.
+            
+            - #### Bucket settings:
+                - #### Properties:
+                    - Navigate to the bucket properties settings.
+                    - Turn on static website hosting.
+                    - In the index and error add index.html and error.html.
+                    - Click Save.
+                - #### Permissions:
+                    - Click on the buckets Permissions tabs
+                    - Firstly paste in the following cors config:
+                        ```
+                        [
+                            {
+                                "AllowedHeaders": [
+                                    "Authorization"
+                                ],
+                                "AllowedMethods": [
+                                    "GET"
+                                ],
+                                "AllowedOrigins": [
+                                    "*"
+                                ],
+                                "ExposeHeaders": []
+                            }
+                            ]
+                        ```
+                    - Then in the bucket policy tap, click on generate policy.
+                - #### Policy:
+                    - Select S3 bucket policy
+                    - Add * to the principal field to select all principals
+                    - Set the action to get object.
+                    - Paste in your ARN which is available on the previous page.
+                    - Click, add statement
+                    - Then click, generate policy.
+                    - Now copy and paste your new policy into the bucket policy.
+                    - Add /* onto the end of the resources key
+                    - Click Save.
+                - #### Access control list:
+                    - In the access control list tab set the list objects permission to everyone.
+            
+        - **Create a User.**
+            - To create a user for the bucket search for IAM and select it.
+            - Create a Group.
+            - Firstly create a group to put user in.
+            - Click create a new group and name it.
+            - Click through to the end and save the group.
+            - Create a policy.
+                - In the group click, policy and then, create policy.
+                - Select the JSON tab and then import managed policies.
+                - Search S3 and select AmazonS3FullAccess and import.
+                - In the resources section paste in the arn from before.
+                - click through to review the policy.
+                - Fill in name and description and then click generate policy.
+            - Back in your group click permission and then attach the policy.
+            - Find the policy you've just created and attach it.
+            
+            - Create the User.
+            - Select Users from the sidebar and then click, add user.
+            - Create a user name and select programmatic access then click next.
+            - Then select the group to add user to.
+            - Click through to the end and then click create user.
+            - ** Make sure to now download the CSV file as it contains the users keys needed to access from our app.**
 
-6. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+    - **Heroku Config Vars**
+        - #### Set up the following environment variables in your heroku app settings:
+            - AWS_ACCESS_KEY_ID = found in the CSV file from the above step
+            - AWS_SECRET_ACCESS_KEY = found in the CSV file from the above step
+            - DATABASE_URL = generated by Heroku once you created postrgres db in above steps
+            - SECRET_KEY = your secret key.
+            - STRIPE_PUBLIC_KEY = your stripe public key.
+            - STRIPE_SECRET_KEY = your stripe secret key.
+            - STRIPE_WH_SECRET = your stripe webhook secret.
+            - USE_AWS = 'True' 
 
-7. Set the following config vars:
+            - AWS KEYs can be found in the CSV file from 'Create a User' step in AWS section
+            - Your stripe variables can be found on your stripe dashboard.
+            - You can generate a Django secret key here. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/)
+---
+### Contact: your.marketer1303@gmail.com
 
-| Key | Value |
- --- | ---
-DEBUG | FALSE
-IP | 0.0.0.0
-MONGO_URI | `mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority`
-PORT | 5000
-SECRET_KEY | `<your_secret_key>`
-
-- To get you MONGO_URI read the MongoDB Atlas documentation [here](https://docs.atlas.mongodb.com/)
-
-8. In the heroku dashboard, click "Deploy".
-
-9. In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
-
-10. The site is now successfully deployed.
-
-### Contact
-
-your.marketer1303@gmail.com
+#### back to [top](#table-of-contents)
