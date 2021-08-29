@@ -173,6 +173,7 @@ Hence the idea for this project. This app would make it easy for people to put i
 # Features
 +   ### Shared Features
     - Is fully mobile responsive and reacts to changes in screen size. It also allows for collapsible menu on mobile screens.
+    - Custom templates added for 403, 404, 500 & 503 HTTP Status code errors
     - Items lists and mobile view shopping bag have back to top button in lower right corner.
     - All external links open in a new tab
 +   ### Navbar
